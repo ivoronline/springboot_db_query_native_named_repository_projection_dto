@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyController {
 
-  @Autowired
-  PersonRepository personRepository;
+  @Autowired PersonRepository personRepository;
 
   //================================================================
   // SELECT PERSON BY NAME AGE
