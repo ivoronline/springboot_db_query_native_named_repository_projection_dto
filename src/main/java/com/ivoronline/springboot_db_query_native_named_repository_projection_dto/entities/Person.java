@@ -22,7 +22,7 @@ import javax.persistence.SqlResultSetMapping;
   )
 )
 @NamedNativeQuery(
-  name             = "Person.selectPersonByNameAge",
+  name             = "Person.selectPerson",
   query            = "SELECT name, age FROM Person WHERE name = :name",
   resultSetMapping = "PersonDTOMapping"
 )

@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
   @Query(nativeQuery=true)
-  PersonDTO selectPersonByNameAge(String name);
+  PersonDTO selectPerson(String name);
 }
 
 

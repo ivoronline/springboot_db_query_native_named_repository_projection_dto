@@ -14,12 +14,11 @@ public class MyController {
   @Autowired PersonRepository personRepository;
 
   //================================================================
-  // SELECT PERSON BY NAME AGE
+  // SELECT PERSON
   //================================================================
-  @RequestMapping("SelectPersonByNameAge")
-  PersonDTO selectPersonByNameAge() throws JsonProcessingException {
-    PersonDTO personDTO = personRepository.selectPersonByNameAge("John");
-    System.out.println(new ObjectMapper().writeValueAsString(personDTO));
+  @RequestMapping("SelectPerson")
+  PersonDTO selectPerson() throws JsonProcessingException {
+    PersonDTO personDTO = personRepository.selectPerson("John");
     return    personDTO;
   }
 
